@@ -16,7 +16,7 @@ if "model" not in st.session_state:
 def app():
     st.subheader('RNN-LSTM Based Typhoon Prediction in the Philippines')
     
-    text = """Prof. Louie F. Cervantes, M. Eng. (Information Engineering)
+    text = """Matthew David G. Montero, BSCS--3A
     \nCCS 229 - Intelligent Systems
     *Department of Computer Science
     *College of Information and Communications Technology
@@ -31,8 +31,10 @@ def app():
     preparedness efforts."""
     st.write(text)
 
-    text = """The data is obtained from the following site : 
-    https://en.wikipedia.org/wiki/List_of_typhoons_in_the_Philippines_(2000%E2%80%93present)"""
+    text = """The data is initially obtained from the following site : 
+    https://en.wikipedia.org/wiki/List_of_typhoons_in_the_Philippines_(2000%E2%80%93present)
+    However, the data is now updated to reflect the number of typhoons for each month of the year since the year 2000.
+    """
     st.write(text)  
 
     df = pd.read_csv('./ph-typhoons.csv', header=0)
